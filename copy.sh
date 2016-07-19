@@ -7,5 +7,7 @@ cp -r $DIR/original .
 
 mkdir mutants && cd mutants
 for func in $(cat $DIR/traditional_mutants/method_list); do
-    cp -r $DIR/traditional_mutants/$func/. .
+    for mut in $(ls $DIR/traditional_mutants/$func); do
+        cp $DIR/traditional_mutants/$func/$mut/$1.java $mut.java
+    done
 done
