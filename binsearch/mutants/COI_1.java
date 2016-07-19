@@ -12,7 +12,7 @@ public class binsearch
             // ----------
             boolean NAME0 = lo < hi;
             boolean NAME1 = !(lo < hi);
-            if(NAME0 != NAME1) throw new WeakMutationException();
+            if(NAME0 != NAME1) throw new RuntimeException();
             // ----------
             if (!NAME0) break;
 

@@ -10,7 +10,7 @@ public class binsearch
         // -----------------
         int NAME0 = arr.length - 1;
         int NAME1 = arr.length * 1;
-        if (NAME0 != NAME1) throw new WeakMutationException();
+        if (NAME0 != NAME1) throw new RuntimeException();
         // -----------------
         int hi = NAME0;
 

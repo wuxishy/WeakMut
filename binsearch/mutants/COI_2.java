@@ -14,7 +14,7 @@ public class binsearch
             // ----------
             boolean NAME0 = num > arr[mi];
             boolean NAME1 = !(num > arr[mi]);
-            if(NAME0 != NAME1) throw new WeakMutationException();
+            if(NAME0 != NAME1) throw new RuntimeException();
             // ----------
             if (NAME0) {
                 lo = mi + 1;

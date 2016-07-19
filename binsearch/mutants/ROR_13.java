@@ -12,7 +12,7 @@ public class binsearch
             int mi = (hi - lo) / 2 + lo;
 
             // --------------
-            if( (num > arr[mi]) != true) throw new WeakMutationException();
+            if( (num > arr[mi]) != true) throw new RuntimeException();
             // --------------
             if (true) {
                 lo = mi + 1;
