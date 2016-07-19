@@ -17,7 +17,12 @@ public class mode
             if (arr[i] == cur) {
                 count += 1;
             } else {
-                cur = arr[-i];
+				// ------------
+				int NAME0 = i;
+				int NAME1 = -i;
+				if (NAME0 != NAME1) throw new RuntimeException();
+				// ------------
+                cur = arr[NAME0];
                 count = 1;
             }
             max = count > max ? count : max;

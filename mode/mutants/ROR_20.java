@@ -20,7 +20,12 @@ public class mode
                 cur = arr[i];
                 count = 1;
             }
-            max = true ? count : max;
+            // ------------
+            int NAME0 = true ? count : max;
+            int NAME1 = count > max ? count : max;
+            if (NAME0 != NAME1) throw new RuntimeException();
+			// ------------
+			max = NAME0;
         }
         return max;
     }

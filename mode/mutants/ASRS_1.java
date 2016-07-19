@@ -15,7 +15,13 @@ public class mode
         int count = 1;
         for (int i = 1; i < arr.length; ++i) {
             if (arr[i] == cur) {
-                count /= 1;
+            	// --------------
+            	int COPY = 1;
+            	int NAME0 = count + COPY;
+            	int NAME1 = count / COPY;
+            	if (NAME0 != NAME1) throw new RuntimeException();
+				// ------------
+                count = NAME0;
             } else {
                 cur = arr[i];
                 count = 1;

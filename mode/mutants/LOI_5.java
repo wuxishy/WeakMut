@@ -14,7 +14,12 @@ public class mode
         int cur = arr[0];
         int count = 1;
         for (int i = 1; i < arr.length; ++i) {
-            if (arr[i] == ~cur) {
+        	// ---------------
+        	boolean NAME0 = arr[i] == cur;
+        	boolean NAME1 = arr[i] == ~cur;
+        	if (NAME0 != NAME1) throw new RuntimeException();
+        	// ---------------
+            if (NAME0) {
                 count += 1;
             } else {
                 cur = arr[i];
